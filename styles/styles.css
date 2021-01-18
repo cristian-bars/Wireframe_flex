@@ -1,0 +1,140 @@
+.contenedor {
+    background-color: black;
+}
+.grup, .grup_2, .grup_3 {
+    width: 100%;
+    /*background-color: black;*/
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+.grup {
+    background-image: url("../images/fons_capçalera.jpg");
+    background-position-y: 55%;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.grup_2 {
+    display: flex;
+}
+
+.fila_1 {
+    display: flex;
+    /*background-color: darkblue;*/
+}
+
+.fila_2 {
+    display: flex;
+}
+.grup_3 .fila_2 {
+    background-color: darkorange;
+}
+
+.fila_1, .fila_2 {
+    margin: 5px;
+}
+
+.element_1 {
+    width: 25%;
+    flex:1 1 0;
+    margin: 5px;
+}
+
+.element_1 img {
+    width: 50px;
+    margin: 10px;
+    height: 50px;
+}
+
+.element_2 {
+    width: 25%;
+    flex:1 1 0;
+    margin: 5px;
+    text-align: center;
+    opacity: 0.5;
+    color: red;
+    font-size: 30px;
+    font-family: catamaran;
+    background-color: rgb(233, 231, 231);
+}
+
+.element_1:nth-child(2){
+    flex-grow:2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna {
+    width: 50%;
+    background-color: darkslateblue;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.element_3 {
+    width: calc(50% - 10px);
+    background-color: deepskyblue;
+    margin: 5px;
+    display: inline-grid;
+}
+
+.element_3:nth-child(5){
+    flex-grow:2;
+}
+
+.element_3 img {
+    width: 100%;
+}
+
+.element_4 {
+    width: 100%;
+    background-color: hotpink;
+    margin: 5px;
+}
+
+.nav_info {
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    scale: 1;
+    transition: scale 0.5s;
+    margin: 0 10px;
+}
+
+.menu:hover {
+    /*background-color: rgb(238, 236, 236);*/
+    scale: 1.25;
+    transition: scale 0.5s;
+}
+
+.menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.xarxes {
+    text-align: center;
+}
+.xarxes img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 660px){
+    .grup_2 {
+        flex-wrap: wrap;
+        background-color: yellow;
+    }
+    
+    .columna {
+        width: 100%;
+    }
+}
